@@ -9,7 +9,7 @@
 
     <style>
         body {
-            max-width: 1440px;
+            max-width: 600px;
             margin: 0 auto;
             font-size: 1.6rem;
             font-family: 'Century Gothic', sans-serif;
@@ -20,106 +20,73 @@
 
         }
 
-        .logo {
-            width: 25%;
-            display: block;
+        .img {
             margin: auto;
+            width: 100%;
+        }
+
+        .logo {
+            width: 45%;
+            display: block;
+
 
         }
 
         .titulo {
-            font-size: 145%;
+            font-size: 70%;
             text-align: center;
             margin: 3%;
             color: #fff;
             padding-bottom: 3%;
+            margin-bottom: 0;
         }
-
-        .img_2 {
-            width: 100%;
-            height: 40%;
-
-        }
-        
 
         .texto {
             font-size: 70%;
             text-align: justify;
-            margin: 5%;
+            margin: 2%;
             text-transform: uppercase;
         }
 
-        .img_3 {
-            width: 50%;
-            margin: 2% 25%;
-        }
-
-        .all_button{
+        .buttons {
+            padding: 1.5rem 0;
             background-color: #CEC4A6;
         }
 
-        .all_button :hover{
-            font-weight: bold;
+      
+
+        .buttons .main-button {
+
+            text-align: center;
         }
 
-        .botao {
-            width: 148px;
-            height: 50px;
-            font-size: 80%;
+        .buttons>div:not(:last-child) {
+            margin: .5rem 0 2.5rem 0;
+        }
+
+        .buttons .main-button a {
+            text-decoration: none;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            background-color: #FF7A00;
+            color: white;
+            transition: .2s ease-in-out;
+        }     
+
+        .buttons .secondary-button {
+            text-align: center;
+        }
+
+        .buttons .secondary-button a {
+            text-decoration: none;
+            padding: .9rem;
+            border-radius: 50px;
             background-color: #585858;
             color: white;
-            border: none;
-            text-transform: uppercase;            
-
         }
 
-        .dual_button {
-            text-align: center;
-            margin: 3%;
-            margin-left: auto;
-            margin-right: auto;
-            padding-bottom: 50px;
-        }
-
-        .botao_1_1{
-            padding-top: 50px;
-        }
-
-        .botao_1 {
-            display: block;
-            margin: auto;
-            width: 300px;
-            height: 100px;
-            background-color: #FF7A00;
-
-        }
-        
-        @media (max-width: 1270px){
-            .titulo{
-                font-size: 120%;
-            }
-        }
-
-        @media (max-width: 980px){
-            .titulo{
-                font-size: 100%;
-            }
-            .img_3{
-                width: 100%;
-                margin: auto;
-            }
-        }
-
-        @media (max-width: 670px){
-            .titulo{
-                font-size: 80%;
-            }
-        }
-
-        @media (max-width: 630px){
-            .titulo{
-                font-size: 70%;
-            }
+        .buttons>div a:hover {
+            background-color: #725B3B;
         }
 
     </style>
@@ -129,39 +96,35 @@
 <body>
 
     <div class="cabecalho">
-        <img class="img logo" src="logo.png" alt="logo da pousada">
-        
+        <img class="img logo" src="https://www.pousadadasararas.com.br/images/logo.png" alt="logo da pousada">
+
         <h1 class="titulo">MAIS DE TRES DÉCADAS DE TRADIÇÃO!</h1>
     </div>
 
     <!-- <h1>img</h1> -->
-    <img class="img img_2" src="img_2.jpg" alt="imagem principal">
+    <img class="img img_2" src="https://www.pousadadasararas.com.br/images/banner/2.jpg" alt="imagem principal">
 
     <p class="texto tx_1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. In quas velit delectus assumenda
         amet ipsum accusamus fugit excepturi. Corporis illum facilis dolor provident at aliquam est labore optio omnis
         laudantium.</p>
 
     <!-- <h1>img</h1> -->
-    <img class="img img_3" src="img_3.jpg" alt="imagem secundaria">
+    <img class="img img_3" src="https://www.pousadadasararas.com.br/images/acomodacoes/apartamentos/ap1.jpg"
+        alt="imagem secundaria">
 
     <p class="texto tx_2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe deleniti in facere ratione,
         incidunt labore, similique sunt, molestias quae id alias. Rerum nobis accusamus ad dolores dicta natus rem ea.
     </p>
 
     <!-- <h1>botao</h1> -->
-    <div class="all_button">
-        <div class="botao_1_1">
-            <input class="botao botao_1" type="button" value="Reserve aqui">
+    <div class="buttons">
+
+        <div class="main-button">
+            <a href="https://book.omnibees.com/hotel/6776" target="_blank">Reserve agora</a>
         </div>
-
-        <div class="dual_button">
-
-            <!-- <h1>botao</h1> -->
-            <input class="botao botao_2" type="button" value="Clicar aqui">
-
-            <!-- <h1>botao</h1> -->
-            <input class="botao botao_3" type="button" value="Clicar aqui">
-
+        <div class="secondary-button">
+            <a href="https://www.instagram.com/pousadadasararas/" target="_blank">Instagram</a>
+            <a href="https://www.facebook.com/ArarasPousada" target="_blank">Facebook</a>
         </div>
     </div>
 
